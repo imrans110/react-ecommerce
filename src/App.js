@@ -4,10 +4,13 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import "./App.css";
+
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
 import AuthPage from "./pages/auth/auth.component";
+import CheckoutPage from "./pages/checkout/checkout.component";
+
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.action";
 import { selectCurrentUser } from "./redux/user/user.selectors";
@@ -50,6 +53,7 @@ class App extends React.Component {
               this.props.currentUser ? <Redirect to="/" /> : <AuthPage />
             }
           />
+          <Route exact path="/checkout" component={CheckoutPage} />
         </Switch>{" "}
       </div>
     );
