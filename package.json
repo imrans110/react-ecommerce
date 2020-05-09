@@ -1,7 +1,20 @@
 {
   "name": "react-ecommerce",
+  "description": "An e-commerce app built around react tool chain making use of standard third-party libs like Redux",
+  "keywords": [
+    "react-ecommerce",
+    "redux",
+    "reselect",
+    "redux-persist",
+    "firebase"
+  ],
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Syed Imran Abidi",
+    "email": "imrans110@hotmail.com",
+    "url": "https://github.com/imrans110"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
